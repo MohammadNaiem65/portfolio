@@ -1,0 +1,46 @@
+#links-container[data-index='0'] > #patterns {
+    background-position-y: 50%;
+}
+
+#links-container[data-index='1'] > #patterns {
+    background-position-y: calc(100dvh - 50%);
+}
+
+#links-container[data-index='2'] > #patterns {
+    background-position-y: calc(200dvh - 150%);
+}
+
+#links-container[data-index='3'] > #patterns {
+    background-position-y: calc(300dvh - 250%);
+}
+
+#links-container[data-index='4'] > #patterns {
+    background-position-y: calc(400dvh - 350%);
+}
+
+.link {
+    transition: opacity 0.4s ease-in-out;
+}
+
+#links:hover > .link {
+    opacity: 0.6;
+}
+
+#links:hover > .link:hover {
+    opacity: 1;
+}
+
+#patterns {
+    background-image: url(../../assets/patterns.png);
+    background-size: 26rem;
+    background-repeat: repeat-y;
+    background-position: -10rem 50%;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+#links:hover ~ #patterns {
+    opacity: 0.34;
+    background-position-x: -12rem;
+    background-size: 24rem;
+}
