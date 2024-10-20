@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import './Sidebar.css';
 
-const LINKS = ['home', 'profile', 'projects', 'contact', 'hire me'];
+const LINKS = ['home', 'skills', 'projects', 'contact', 'hire me'];
 
 export default function Sidebar() {
     const linksContainerRef = useRef(null);
