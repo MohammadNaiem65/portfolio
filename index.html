@@ -28,5 +28,18 @@
     <body>
         <div id="root"></div>
         <script type="module" src="/src/main.jsx"></script>
+
+        <!-- EmailJS -->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init({
+                    publicKey: 'Y8L4uOD2G2Fo-wo5T',
+                });
+            })();
+        </script>
     </body>
 </html>
