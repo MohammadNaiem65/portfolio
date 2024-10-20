@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import bars from '../../assets/bars.svg';
 import cross from '../../assets/cross.svg';
 
@@ -6,7 +7,7 @@ export default function Hamburger({
     setShowNavbar = () => {},
 }) {
     return (
-        <div>
+        <div className='lg:hidden'>
             <img
                 src={showNavbar ? cross : bars}
                 alt='hamburger'
