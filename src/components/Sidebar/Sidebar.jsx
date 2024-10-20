@@ -19,7 +19,7 @@ export default function Sidebar() {
                 {LINKS.map((link, index) => (
                     <a
                         key={index}
-                        className='link w-fit'
+                        className='link title w-fit'
                         href={`#${link === 'hire me' ? 'hire-me' : link}`}
                         onMouseOver={() =>
                             (linksContainerRef.current.dataset.index = index)

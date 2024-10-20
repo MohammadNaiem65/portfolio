@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .title {
+        @apply font-roboto text-slate-200;
+    }
+
+    .paragraph {
+        @apply font-agdasima text-slate-400;
+    }
+}
