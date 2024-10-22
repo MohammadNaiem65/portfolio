@@ -1,15 +1,15 @@
-import jsImg from '../../assets/javascript.png';
-import reactImg from '../../assets/react.png';
-import tailwindImg from '../../assets/tailwind.png';
-import framerMotionImg from '../../assets/framer-motion.svg';
-import reduxImg from '../../assets/redux.svg';
-import firebaseImg from '../../assets/firebase.svg';
-import nodeImg from '../../assets/node.png';
-import expressImg from '../../assets/express.png';
-import mongodbImg from '../../assets/mongodb.svg';
-import mongooseImg from '../../assets/mongoose.svg';
-import gitImg from '../../assets/git.svg';
-import githubImg from '../../assets/github.svg';
+import jsImg from '../../assets/icons/javascript.png';
+import reactImg from '../../assets/icons/react.png';
+import tailwindImg from '../../assets/icons/tailwind.png';
+import framerMotionImg from '../../assets/icons/framer-motion.svg';
+import reduxImg from '../../assets/icons/redux.svg';
+import firebaseImg from '../../assets/icons/firebase.svg';
+import nodeImg from '../../assets/icons/node.png';
+import expressImg from '../../assets/icons/express.png';
+import mongodbImg from '../../assets/icons/mongodb.svg';
+import mongooseImg from '../../assets/icons/mongoose.svg';
+import gitImg from '../../assets/icons/git.svg';
+import githubImg from '../../assets/icons/github.svg';
 
 const IMAGES = [
     {
