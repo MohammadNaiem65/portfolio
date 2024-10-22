@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import bars from '../../assets/bars.svg';
-import cross from '../../assets/cross.svg';
+import bars from '../../assets/icons/bars.svg';
+import cross from '../../assets/icons/cross.svg';
 
 export default function Hamburger({
     showNavbar = false,
