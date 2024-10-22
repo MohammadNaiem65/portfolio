@@ -44,3 +44,17 @@
     background-position-x: -12rem;
     background-size: 24rem;
 }
+
+#links-container {
+    transition: left 500ms ease, right 500ms ease;
+}
+
+@media screen and (width <= 1023px) {
+    #links-container {
+        background: radial-gradient(
+            ellipse at center,
+            #294d5b 0%,
+            #090a0f 100%
+        );
+    }
+}
