@@ -37,7 +37,7 @@ export default function Contact() {
     return (
         <section
             id='contact'
-            className='w-full h-dvh col-span-7 grid-cols-subgrid flex justify-center items-center'
+            className='w-full h-dvh mt-14 pt-16 col-span-7 grid-cols-subgrid flex justify-center items-center'
         >
             <div className='w-[46rem] h-[26rem]'>
                 <h3 className='title font-bold text-4xl'>
@@ -50,7 +50,7 @@ export default function Contact() {
                     <form
                         ref={form}
                         onSubmit={sendEmail}
-                        className='w-4/5 mx-auto mt-10 grid grid-cols-3 gap-y-4'
+                        className='w-full md:w-3/4 mx-auto mt-5 lg:mt-10 grid grid-cols-3 gap-y-4'
                     >
                         <label
                             htmlFor='from_name'
@@ -100,7 +100,7 @@ export default function Contact() {
                         <input
                             type='submit'
                             value='Send'
-                            className='col-[2/3] w-30 mt-5 px-3 py-1 border-2 border-sky-400 text-lg text-sky-400 rounded cursor-pointer duration-300 hover:text-white hover:bg-sky-400'
+                            className='col-[2/3] w-32 mx-auto mt-10 mb-20 px-6 py-[0.35rem] border-2 border-sky-400 font-semibold text-2xl text-sky-400 block rounded duration-300 cursor-pointer hover:bg-sky-400 hover:text-white'
                         />
                     </form>
                 )}
