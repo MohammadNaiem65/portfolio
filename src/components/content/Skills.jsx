@@ -69,21 +69,21 @@ export default function Skills() {
             className='w-full h-dvh col-span-7 grid-cols-subgrid flex justify-center items-center'
         >
             <div className='w-[46rem] h-[26rem]'>
-                <h3 className='title font-bold text-4xl'>
+                <h3 className='title font-bold text-3xl lg:text-4xl'>
                     My Core Skills
                     <span className='text-4xl text-sky-400 leading-3'>.</span>
                 </h3>
 
-                <section className='w-full mt-8 grid grid-cols-6 gap-3'>
+                <section className='w-full mt-4 lg:mt-8 grid grid-cols-6 gap-1 lg:gap-3'>
                     {IMAGES.map((image, index) => (
                         <div
                             key={index}
-                            className='col-span-1 object-center p-2 font-agdasima text-2xl'
+                            className='col-span-2 lg:col-span-1 object-center p-2 font-agdasima text-2xl'
                         >
                             <img
                                 src={image.src}
                                 alt={`${image.alt} image`}
-                                className='size-16 p-1 mx-auto object-contain brightness-125 contrast-125'
+                                className='size-12 lg:size-16 p-1 mx-auto object-contain brightness-125 contrast-125'
                             />
                             <p className='text-center capitalize'>
                                 {image.alt}

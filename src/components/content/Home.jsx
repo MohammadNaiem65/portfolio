@@ -2,7 +2,7 @@ export default function Home() {
     return (
         <section
             id='home'
-            className='w-full h-dvh col-span-7 grid-cols-subgrid flex justify-center items-center'
+            className='col-span-7 w-full h-dvh grid-cols-subgrid flex justify-center items-center'
         >
             <div className='w-[40rem] h-[20rem]'>
                 <h3 className='title font-bold text-4xl'>Md Rifat Ahmed</h3>
@@ -22,7 +22,7 @@ export default function Home() {
 
                 <a
                     href='#projects'
-                    className='w-fit ml-auto px-5 py-2 border-2 border-sky-400 font-semibold uppercase hover:bg-sky-400 text-sky-400 hover:text-white block duration-300'
+                    className='w-fit ml-auto mt-10 mb-20 px-6 py-2 border-2 border-sky-400 font-semibold font-agdasima text-2xl text-sky-400 block rounded duration-300 hover:bg-sky-400 hover:text-white'
                 >
                     My Projects
                 </a>

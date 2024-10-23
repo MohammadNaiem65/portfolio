@@ -1,9 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Content from './components/content/Content';
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
+    const [showSidebar, setShowSidebar] = useState(false);
+
     useEffect(() => {
         // Get the hash from the URL
         const hash = window.location.hash;
@@ -23,8 +25,11 @@ function App() {
 
     return (
         <section className='min-h-dvh bg-[radial-gradient(ellipse_at_center,_#294d5b_0%,_#090a0f_100%)] text-slate-400 grid grid-cols-7'>
-            <Navbar />
-            <Sidebar />
+            <Navbar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
+            <Sidebar
+                showSidebar={showSidebar}
+                setShowSidebar={setShowSidebar}
+            />
             <Content />
         </section>
     );
