@@ -55,7 +55,6 @@ const SPRING_OPTIONS = {
 export default function Projects() {
     const [selectedSlide, setSelectedSlide] = useState(null);
     const [currSlide, setCurrSlide] = useState(0);
-
     const dragX = useMotionValue(0);
 
     const handleSliding = () => {
@@ -70,7 +69,6 @@ export default function Projects() {
         }
     };
 
-    // Slider autoplay
     useEffect(() => {
         const intervalRef = setInterval(() => {
             const x = dragX.get();
@@ -89,26 +87,24 @@ export default function Projects() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    console.log(selectedSlide);
-
     return (
         <section
             id='projects'
-            className='w-full h-dvh col-span-7 grid-cols-subgrid flex justify-center items-center'
+            className='col-span-7 w-full min-h-dvh mt-8 md:mt-12 sm:px-8 md:px-12 lg:px-0 grid-cols-subgrid flex justify-center items-center'
         >
-            <div className='w-[46rem] h-[26rem] relative'>
-                <h3 className='title font-bold text-4xl mb-4'>
+            <div className='w-full md:w-[40rem] lg:w-[46rem] h-auto md:h-[26rem] lg:h-[26rem] relative'>
+                <h3 className='title font-bold text-4xl md:mb-2 lg:mb-4 text-left'>
                     From Concept to Code
-                    <span className='text-4xl text-sky-400 leading-3'>.</span>
+                    <span className='text-4xl text-sky-400 leading-3'>
+                        .
+                    </span>
                 </h3>
 
                 {/* Slides Container */}
-                <div className='overflow-hidden'>
+                <div className='mt-3 md:mt-0 overflow-hidden relative'>
                     <motion.div
                         className='flex cursor-grab active:cursor-grabbing'
-                        style={{
-                            x: dragX,
-                        }}
+                        style={{ x: dragX }}
                         drag='x'
                         onDragEnd={handleSliding}
                         transition={SPRING_OPTIONS}
@@ -120,16 +116,16 @@ export default function Projects() {
                         <Slides images={images} currSlide={currSlide} />
                     </motion.div>
                     <button
-                        className='w-fit mx-auto mt-10 mb-20 px-6 py-1 border-2 border-sky-400 font-semibold font-agdasima text-2xl text-sky-400 block rounded duration-300 hover:bg-sky-400 hover:text-white'
+                        className='w-fit mx-auto mt-6 sm:mt-8 lg:mt-10 px-4 sm:px-6 py-1 border-2 border-sky-400 font-semibold font-agdasima text-xl sm:text-2xl text-sky-400 block rounded duration-300 hover:bg-sky-400 hover:text-white'
                         onClick={() => setSelectedSlide(currSlide)}
                     >
                         Details
                     </button>
                 </div>
 
-                {/* Controls */}
+                {/* Controls - Only visible on md and larger screens */}
                 <motion.span
-                    className='size-10 inline-block absolute top-1/2 -left-12 bg-sky-50/10 hover:bg-sky-50/20 rounded-full cursor-pointer duration-300 before:content-[""] before:size-4 before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/3 before:-rotate-[45deg] before:-translate-y-1/2 before:border-t-2 before:border-l-2 before:border-sky-400'
+                    className='hidden md:inline-block size-10 absolute top-1/2 -left-12 bg-sky-50/10 hover:bg-sky-50/20 rounded-full cursor-pointer duration-300 before:content-[""] before:size-4 before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/3 before:-rotate-[45deg] before:-translate-y-1/2 before:border-t-2 before:border-l-2 before:border-sky-400'
                     whileTap={{ scale: 0.85, transitionDuration: 0 }}
                     onClick={() =>
                         setCurrSlide((prev) =>
@@ -138,7 +134,7 @@ export default function Projects() {
                     }
                 />
                 <motion.span
-                    className='size-10 inline-block absolute top-1/2 -right-12 bg-sky-50/10 hover:bg-sky-50/20 rounded-full cursor-pointer duration-300 before:content-[""] before:size-4 before:absolute before:top-1/2 before:left-1/2 before:-translate-x-2/3 before:rotate-[135deg] before:-translate-y-1/2 before:border-t-2 before:border-l-2 before:border-sky-400'
+                    className='hidden md:inline-block size-10 absolute top-1/2 -right-12 bg-sky-50/10 hover:bg-sky-50/20 rounded-full cursor-pointer duration-300 before:content-[""] before:size-4 before:absolute before:top-1/2 before:left-1/2 before:-translate-x-2/3 before:rotate-[135deg] before:-translate-y-1/2 before:border-t-2 before:border-l-2 before:border-sky-400'
                     whileTap={{ scale: 0.85, transitionDuration: 0 }}
                     onClick={() =>
                         setCurrSlide((prev) =>
