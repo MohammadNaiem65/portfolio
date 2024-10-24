@@ -55,7 +55,14 @@ export default function HireMe() {
                     <p className='text-justify'>
                         If you believe my skills and experience align with your
                         organization&apos;s needs, I would be delighted to
-                        discuss your requirements further. Please find my CV
+                        discuss your requirements further. Please find my{' '}
+                        <a
+                            href='https://drive.google.com/file/d/1CwMjHrLZi9xsUVtZQBVM8_BamdMGbWl5/view?usp=sharing'
+                            target='_blank'
+                            className='text-sky-400 hover:underline'
+                        >
+                            CV
+                        </a>{' '}
                         attached. For additional information about my background
                         and accomplishments, please visit the links below.
                     </p>

@@ -100,7 +100,7 @@ export default function Contact() {
                         <input
                             type='submit'
                             value='Send'
-                            className='col-[2/3] w-32 mx-auto mt-10 mb-20 px-6 py-[0.35rem] border-2 border-sky-400 font-semibold text-2xl text-sky-400 block rounded duration-300 cursor-pointer hover:bg-sky-400 hover:text-white'
+                            className='col-[2/3] w-32 mx-auto mt-10 mb-20 px-6 py-[0.35rem] border-2 border-sky-400 font-semibold font-agdasima text-2xl text-sky-400 block rounded duration-300 cursor-pointer hover:bg-sky-400 hover:text-white'
                         />
                     </form>
                 )}
