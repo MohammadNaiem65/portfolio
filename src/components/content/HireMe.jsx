@@ -57,7 +57,7 @@ export default function HireMe() {
                         organization&apos;s needs, I would be delighted to
                         discuss your requirements further. Please find my{' '}
                         <a
-                            href='https://drive.google.com/file/d/1CwMjHrLZi9xsUVtZQBVM8_BamdMGbWl5/view?usp=sharing'
+                            href='https://drive.google.com/file/d/1afF2UbCWLVFef_RnvCprHEZmQHL8-F4v/view?usp=sharing'
                             target='_blank'
                             className='text-sky-400 hover:underline'
                         >
